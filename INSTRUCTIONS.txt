@@ -1,0 +1,13 @@
+README
+
+The file structure of this folder are as follows
+
+1) latency.cpp --> main program to measure memory latency. It is standalone(does not depend on other source files) but depends on openmp for multithreading.
+
+2) doit.sh --> simple script to invoke "make" and "./latency". Running doit.sh will produce the default results that perform random memory read & read-write accesses, both with 1 thread.
+
+3) make --> Makefile to compile latency.cpp with necessary compile flags
+
+4) latency --> executable file after compilation(changes when latency.cpp is modified and compiled)
+
+5) csv/ --> This folder contains the csv files generated and observed for the report
